@@ -1,0 +1,40 @@
+﻿version 3.00
+cm_version 1.0
+platform CM-530
+o main
+o begin
+o call faddr_dest:Cheer1
+o while(1)
+o begin
+o if param_src:aux:1:63 lop:>= param_src:dec_num:100 rop:then
+o begin
+o call faddr_dest:Cheer4
+- 
+- 
+o end
+o if param_src:cm:19 lop:>= param_src:dec_num:1 rop:then
+o begin
+o call faddr_dest:Cheer5
+o end
+o end
+o end
+o function faddr_src:Cheer5
+o begin
+o load param_dest:motion:1:50 param_src:dec_num:8
+o call faddr_dest:CompleteMotion
+o end
+o function faddr_src:CompleteMotion
+o begin
+o wait param_src:motion:1:51 lop:== param_src:bool_num:1 rop:then
+o end
+o function faddr_src:Cheer1
+o begin
+o load param_dest:motion:1:50 param_src:dec_num:1
+o call faddr_dest:CompleteMotion
+o end
+- 
+o function faddr_src:Cheer4
+o begin
+o load param_dest:motion:1:50 param_src:dec_num:6
+o call faddr_dest:CompleteMotion
+o end
