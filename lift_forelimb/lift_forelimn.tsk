@@ -6,7 +6,7 @@ o begin
 o call faddr_dest:Cheer1
 o while(1)
 o begin
-o if param_src:aux:1:63 lop:>= param_src:dec_num:100 rop:then
+o if param_src:aux:1:63 lop:>= param_src:dec_num:5 rop:then
 o begin
 o call faddr_dest:Cheer4
 - 
@@ -15,6 +15,7 @@ o end
 o if param_src:cm:19 lop:>= param_src:dec_num:1 rop:then
 o begin
 o call faddr_dest:Cheer5
+o exit
 o end
 o end
 o end
@@ -29,7 +30,7 @@ o wait param_src:motion:1:51 lop:== param_src:bool_num:1 rop:then
 o end
 o function faddr_src:Cheer1
 o begin
-o load param_dest:motion:1:50 param_src:dec_num:1
+o load param_dest:motion:1:50 param_src:dec_num:7
 o call faddr_dest:CompleteMotion
 o end
 - 
