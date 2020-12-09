@@ -1,0 +1,38 @@
+﻿version 3.00
+cm_version 1.0
+platform CM-530
+o main
+o begin
+o call faddr_dest:Step_forelimb
+- 
+- 
+o end
+o function faddr_src:Step_forelimb
+o begin
+o load param_dest:motion:1:50 param_src:dec_num:7
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:12
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:13
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:14
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:15
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:16
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:17
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:18
+o call faddr_dest:CompleteMotion
+o load param_dest:motion:1:50 param_src:dec_num:19
+o call faddr_dest:CompleteMotion
+- 
+- 
+- 
+- 
+o end
+o function faddr_src:CompleteMotion
+o begin
+o wait param_src:motion:1:51 lop:== param_src:bool_num:1 rop:then
+o end

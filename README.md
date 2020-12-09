@@ -21,3 +21,15 @@
 ### Demo
 
 <img src="./asset/climb_stair.gif" width="400">
+
+
+## Climb Stair
+
+- 강아지로봇이 5칸의 계단을 오른다.
+- 먼저 앞발을 모두 올리고 순서대로 뒷발을 올린다.
+- 미완성 영상은 다음과 같다.
+
+
+### Demo
+
+<img src="./asset/multi_stairs.gif" width="400">
